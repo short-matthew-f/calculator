@@ -40,7 +40,7 @@ html {
 
   min-height: 720px;
 
-  grid-template-rows: repeat(13, 1fr);
+  grid-template-rows: 220px repeat(12, 1fr);
   grid-template-columns: repeat(5, 1fr);
 }
 
@@ -71,12 +71,12 @@ button.equals {
 
 .display {
   background: #88f;
-  padding: 4px 8px;
+  padding: 5px 8px;
 
   grid-column: 1 / 6;
   grid-row: 1 / 4;
 
-  max-height: 240px;
+  height: 220px;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -105,7 +105,9 @@ button.equals {
   grid-row: 3;
   grid-column: 1;
 
-  color: #fb2;
+  line-height: 70px;
+
+  color: #d82;
   font-weight: bold;
 }
 
@@ -114,14 +116,11 @@ button.equals {
   grid-row: 3;
   grid-column: 2 / 6;
   text-align: right;
-  align-self: flex-end;
-  padding: 0;
-  margin: 0;
 }
 
 .controls {
   grid-column: 1 / 6;
-  grid-row: 4 / 14;
+  grid-row: 2 / 14;
 
   display: grid;
   grid-gap: 6px;
