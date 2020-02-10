@@ -40,7 +40,7 @@ html {
 
   min-height: 720px;
 
-  grid-template-rows: 220px repeat(12, 1fr);
+  grid-template-rows: 190px repeat(12, 1fr);
   grid-template-columns: repeat(5, 1fr);
 }
 
