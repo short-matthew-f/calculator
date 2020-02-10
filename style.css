@@ -92,16 +92,16 @@ button.equals {
 }
 
 .held-label {
-  font-size: 3vh;
+  font-size: 36px;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .held-value {
-  font-size: 3.5vh;
+  font-size: 36px;
 }
 
 .next-operation {
-  font-size: 3.5vh;
+  font-size: 24px;
   grid-row: 3;
   grid-column: 1;
 
@@ -110,7 +110,7 @@ button.equals {
 }
 
 .next-value {
-  font-size: 5vh;
+  font-size: 48px;
   grid-row: 3;
   grid-column: 2 / 6;
   text-align: right;
