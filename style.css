@@ -76,11 +76,11 @@ button.equals {
   grid-column: 1 / 6;
   grid-row: 1 / 4;
 
-  height: 220px;
+  height: 190px;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 70px);
+  grid-template-rows: repeat(3, 60px);
 }
 
 .hold {
@@ -105,9 +105,9 @@ button.equals {
   grid-row: 3;
   grid-column: 1;
 
-  line-height: 70px;
+  line-height: 60px;
 
-  color: #d82;
+  color: #fb6;
   font-weight: bold;
 }
 
