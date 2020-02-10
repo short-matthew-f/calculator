@@ -16,11 +16,12 @@ html {
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 1rem 0;
 }
 
 #app h1 {
-  font-size: 7vmin;
-  letter-spacing: 1vmin;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
   margin-bottom: 8px;
 }
 
@@ -35,13 +36,18 @@ html {
   padding: 8px;
   background: #555;
 
-  grid-template-rows: repeat(13, 5vmin);
-  grid-template-columns: repeat(5, 10vmin);
+  width: 480px;
+
+  max-height: 720px;
+  height: 100vh;
+
+  grid-template-rows: repeat(13, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .calculator button {
   font-family: "Coda", cursive;
-  font-size: 4vmin;
+  font-size: 4vh;
   font-weight: 900;
   border-radius: 4px;
   cursor: pointer;
@@ -85,16 +91,16 @@ button.equals {
 }
 
 .held-label {
-  font-size: 3vmin;
+  font-size: 3vh;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .held-value {
-  font-size: 3.5vmin;
+  font-size: 3.5vh;
 }
 
 .next-operation {
-  font-size: 3.5vmin;
+  font-size: 3.5vh;
   grid-row: 3;
   grid-column: 1;
 
@@ -103,7 +109,7 @@ button.equals {
 }
 
 .next-value {
-  font-size: 5vmin;
+  font-size: 5vh;
   grid-row: 3;
   grid-column: 2 / 6;
   text-align: right;
@@ -135,7 +141,7 @@ button.equals {
 }
 
 .memory button {
-  font-size: 2vmin;
+  font-size: 2vh;
 }
 
 .operations {
