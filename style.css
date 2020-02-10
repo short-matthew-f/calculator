@@ -38,8 +38,7 @@ html {
 
   width: 480px;
 
-  max-height: 720px;
-  height: 100vh;
+  min-height: 720px;
 
   grid-template-rows: repeat(13, 1fr);
   grid-template-columns: repeat(5, 1fr);
