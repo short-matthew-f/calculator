@@ -28,19 +28,19 @@ html {
 .calculator {
   display: grid;
   
-  grid-gap: 6px;
-
-  border: 2px solid black;
-  border-radius: 4px;
+  border: 2px solid yellow;
+  border-radius: 12px;
   overflow: hidden;
-  padding: 8px;
-  background: #555;
+  padding: 24px 18px 18px;
+  background: #999;
 
   width: 480px;
 
   min-height: 720px;
 
-  grid-template-rows: 190px repeat(12, 1fr);
+  box-shadow: 5px 5px 12px -6px black;
+
+  grid-template-rows: 180px repeat(12, 1fr);
   grid-template-columns: repeat(5, 1fr);
 }
 
@@ -48,13 +48,14 @@ html {
   font-family: "Coda", cursive;
   font-size: 4vh;
   font-weight: 900;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
-  border: 1px solid black;
+  box-shadow: 5px 5px 8px -4px black, 0 0 6px -3px #f00;
 }
 
 .memory button {
   background: #ff2;
+  font-size: 1em;
 }
 
 .operations button {
@@ -66,7 +67,7 @@ button.equals {
 }
 
 .digits button {
-  background: #eee;
+  background: #fff;
 }
 
 .display {
@@ -76,36 +77,35 @@ button.equals {
   grid-column: 1 / 6;
   grid-row: 1 / 4;
 
-  height: 190px;
+  border: 2px solid yellow;
+  border-radius: 12px;
+  box-shadow: inset 2px 2px 12px -6px black, inset -2px -2px 12px -6px black;
+
+  height: 160px;
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 60px);
-}
-
-.hold {
-  grid-column: 1 / 6;
-  grid-row: 1 / 3;
-  
-  display: grid;
-  grid-template-rows: 2.5fr 3.5fr;
+  grid-template-rows: 40px 50px 60px;
 }
 
 .held-label {
-  font-size: 36px;
-  color: rgba(255, 255, 255, 0.8);
+  grid-row: 1;
+  grid-column: 1 / 6;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: underline;
 }
 
 .held-value {
-  font-size: 48px;
+  grid-row: 2;
+  grid-column: 1 / 6;
+  font-size: 36px;
 }
 
 .next-operation {
-  font-size: 36px;
+  font-size: 42px;
   grid-row: 3;
   grid-column: 1;
-
-  line-height: 60px;
 
   color: #fb6;
   font-weight: bold;
@@ -123,7 +123,7 @@ button.equals {
   grid-row: 2 / 14;
 
   display: grid;
-  grid-gap: 6px;
+  grid-gap: 12px;
 
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(4, 1fr);
@@ -135,13 +135,9 @@ button.equals {
   grid-row: 1;
 
   display: grid;
-  grid-gap: 6px;
+  grid-gap: 12px;
 
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.memory button {
-  font-size: 2vh;
+  grid-template-columns: 2fr 3fr;
 }
 
 .operations {
@@ -149,7 +145,7 @@ button.equals {
   grid-row: 1 / 6;
 
   display: grid;
-  grid-gap: 6px;
+  grid-gap: 12px;
   grid-template-rows: repeat(5, 1fr);
 }
 
@@ -158,7 +154,7 @@ button.equals {
   grid-row: 2 / 6; 
   
   display: grid;
-  grid-gap: 6px;
+  grid-gap: 12px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
