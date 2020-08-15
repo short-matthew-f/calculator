@@ -22,7 +22,7 @@ function showValue( location, value ) {
 
 function updateDisplay() {
   showValue( '.held-value', heldValue );
-  showValue( '.next-value',  nextValue );
+  showValue( '.next-value', nextValue );
 }
 
 function add(x, y) {

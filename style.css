@@ -35,13 +35,11 @@ html {
   background: #999;
 
   width: 480px;
-
-  min-height: 720px;
+  height: 700px;
 
   box-shadow: 5px 5px 12px -6px black;
 
-  grid-template-rows: 180px repeat(12, 1fr);
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 180px 1fr;
 }
 
 .calculator button {
@@ -74,8 +72,7 @@ button.equals {
   background: #88f;
   padding: 5px 8px;
 
-  grid-column: 1 / 6;
-  grid-row: 1 / 4;
+  grid-row: 1;
 
   border: 2px solid yellow;
   border-radius: 12px;
@@ -119,8 +116,7 @@ button.equals {
 }
 
 .controls {
-  grid-column: 1 / 6;
-  grid-row: 2 / 14;
+  grid-row: 2;
 
   display: grid;
   grid-gap: 12px;
